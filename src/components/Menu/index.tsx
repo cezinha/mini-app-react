@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import MenuItem from '../MenuItem';
 import { BiHomeAlt, BiCreditCard, BiDollarCircle } from 'react-icons/bi';
+import { useHistory } from 'react-router-dom';
+
+import MenuItem from '../MenuItem';
 import { Container, Nav, IconButton, IconLabel } from './style';
 
 interface Props {
   current?: number;
 }
-
-export default ({ current = 0 }) => {
+const Menu = ({ current = 0 }: Props) => {
   const history = useHistory();
   const [active, setActive] = useState(current);
   const options = [
@@ -58,3 +58,6 @@ export default ({ current = 0 }) => {
     </Nav>
   );
 };
+
+
+export default Menu;

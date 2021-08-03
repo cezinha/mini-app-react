@@ -10,6 +10,8 @@ export const Box = styled.div`
 `;
 
 export const Container = styled.div`
+  max-width: 798px;
+  margin: 0 auto;
   padding: 16px;
 
   & h1 {

@@ -1,10 +1,11 @@
 import React from 'react';
+
 import Statement from '../../components/Statement';
 import StatementSummary from '../../components/StatementSummary';
 import View from '../../components/ui/View';
 import { Container, Head } from './style';
 
-export default () => (
+const StatementComponent = () => (
   <View>
     <Container>
       <Head>
@@ -15,3 +16,5 @@ export default () => (
     </Container>
   </View>
 );
+
+export default StatementComponent;

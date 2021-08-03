@@ -2,4 +2,6 @@ import React from 'react';
 
 import { View } from './style';
 
-export default ({ ...props }) => <View {...props} />;
+const ViewComponent = ({ ...props }) => <View {...props} />;
+
+export default ViewComponent;

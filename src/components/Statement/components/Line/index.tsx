@@ -1,9 +1,9 @@
 import React from 'react';
-import { format } from 'date-fns';
-import { RiBillLine } from 'react-icons/ri';
 import { BsThreeDots } from 'react-icons/bs';
-import { IoFastFoodOutline } from 'react-icons/io5';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { IoFastFoodOutline } from 'react-icons/io5';
+import { RiBillLine } from 'react-icons/ri';
+
 import { Card } from './style';
 
 interface Props {
@@ -27,14 +27,13 @@ const Icon = ({ tag }: { tag: string }) => {
   return <BsThreeDots />;
 };
 
-export default ({ date, name, description, value, type, tag }: Props) => {
-  const options = {
+const Line = ({ date, name, description, value, type, tag }: Props) => {
+  const fmt = new Intl.DateTimeFormat('pt-BR', {
     hour: '2-digit',
     minute: '2-digit',
     hour12: false,
     timeZone: 'America/Sao_Paulo'
-  };
-  const fmt = new Intl.DateTimeFormat('pt-BR', options).format(date);
+  }).format(date);
   const curr = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
@@ -56,3 +55,5 @@ export default ({ date, name, description, value, type, tag }: Props) => {
     </Card>
   );
 };
+
+export default Line;

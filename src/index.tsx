@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Router from './router';
 
+import Router from './router';
 import './style.css';
 
-interface AppProps {}
 interface AppState {
   name: string;
 }
 
-class App extends Component<AppProps, AppState> {
+class App extends Component<unknown, AppState> {
   constructor(props) {
     super(props);
     this.state = {

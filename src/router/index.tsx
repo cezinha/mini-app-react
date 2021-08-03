@@ -1,20 +1,18 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Menu from '../components/Menu';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import { Container, PageSlider } from './style';
+import Menu from '../components/Menu';
 import routes from './routes';
+import { Container, PageSlider } from './style';
 
 const TransitionFrom = ({
   className,
   children
 }: {
   className?: string;
-  children?: React.JSXElement;
-}) => {
-  return <div className={className}>{children}</div>;
-};
+  children?: JSX.Element;
+}) => <div className={className}>{children}</div>;
 
 const MainRouter = () => {
   const renderRoutes = ({ location }) => {

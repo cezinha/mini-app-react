@@ -8,7 +8,7 @@ interface Props {
   height?: number;
   style?: React.CSSProperties;
 }
-export default ({ type, width, height, style }: Props) =>
+const ShimmerComponent = ({ type, width, height, style }: Props) =>
   type === 'photo' ? (
     <Photo style={{ ...style, width, height }} />
   ) : type === 'line' ? (
@@ -16,3 +16,5 @@ export default ({ type, width, height, style }: Props) =>
   ) : (
     <Shimmer style={{ ...style, width, height }} />
   );
+
+export default ShimmerComponent;

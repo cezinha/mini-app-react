@@ -2,4 +2,6 @@ import React from 'react';
 
 import { Button } from './style';
 
-export default ({ ...props }) => <Button {...props} />;
+const ButtonComponent = ({ ...props }) => <Button {...props} />;
+
+export default ButtonComponent;

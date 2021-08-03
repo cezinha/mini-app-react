@@ -1,9 +1,10 @@
 import React from 'react';
+
 import Shimmer from '../../components/ui/Shimmer';
 import View from '../../components/ui/View';
 import { Box, Container } from './style';
 
-export default ({ match }) => (
+const Home = () => (
   <View>
     <Container>
       <h1>Bem vindo</h1>
@@ -48,3 +49,5 @@ export default ({ match }) => (
     </Container>
   </View>
 );
+
+export default Home;

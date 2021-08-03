@@ -7,8 +7,10 @@ interface Props {
   active?: boolean;
 }
 
-export default ({ label, onClick, active = false }: Props) => (
+const MenuItem = ({ label, onClick, active = false }: Props) => (
   <Item onClick={onClick} $active={active}>
     {label}
   </Item>
 );
+
+export default MenuItem;

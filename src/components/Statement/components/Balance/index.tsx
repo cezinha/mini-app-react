@@ -4,19 +4,16 @@ import { Card } from './style';
 
 interface Props {
   date: Date;
-  name: string;
   value: number;
-  type: string;
   showBalance: boolean;
 }
 
-export default ({ date, name, value, type, showBalance }: Props) => {
-  const options = {
+const Balance = ({ date, value, showBalance }: Props) => {
+  const fmt = new Intl.DateTimeFormat('pt-BR', {
     day: 'numeric',
     month: 'long',
     timeZone: 'America/Sao_Paulo'
-  };
-  const fmt = new Intl.DateTimeFormat('pt-BR', options).format(date);
+  }).format(date);
   const curr = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
     currency: 'BRL'
@@ -34,3 +31,5 @@ export default ({ date, name, value, type, showBalance }: Props) => {
     </Card>
   );
 };
+
+export default Balance;
