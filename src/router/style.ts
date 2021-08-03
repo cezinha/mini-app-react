@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   overflow: hidden;
-  width: 100vw;
-  height: calc(100vh - 67px);
   position: relative;
 `;
 
 export const PageSlider = styled.div`
+  height: calc(100vh - 67px);
+
   & .page-enter > div {
     z-index: 10;
     transform: translate3d(-100%, 0, 0);
@@ -40,16 +40,4 @@ export const PageSlider = styled.div`
     transform: translate3d(-100%, 0, 0);
     transition: transform 300ms;
   }
-`;
-
-export const Page = styled.div`
-  position: absolute;
-  height: calc(100vh - 56px);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  background: #ccc;
-  flex-direction: column;
 `;
