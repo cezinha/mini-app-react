@@ -1,0 +1,141 @@
+{
+  "errors": null,
+  "data": [
+    {
+      "date": "2021-06-30T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": -83,
+      "type": "balance"
+    },
+    {
+      "date": "2021-06-30T21:35:00.000Z",
+      "name": "Compra com cartão",
+      "description": "Gendai",
+      "value": -83,
+      "type": "debit",
+      "tag": "food"
+    }, 
+    {
+      "date": "2021-07-01T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 23,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-01T21:00:00.000Z",
+      "name": "Compra com cartão",
+      "description": "Churrascaria Boi na Brasa",
+      "value": -110,
+      "type": "debit",
+      "tag": "food"
+    }, 
+    {
+      "date": "2021-07-05T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 5523,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-05T20:00:00.000Z",
+      "name": "Salário",
+      "description": "Crédito em Conta",
+      "value": 5500,
+      "type": "credit",
+      "tag": "income"
+    },
+    {
+      "date": "2021-07-08T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 5423,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-08T17:10:00.000Z",
+      "name": "Saque em caixa eletrônico",
+      "description": "Débito em Conta",
+      "value": -100,
+      "type": "debit",
+      "tag": "others"
+    },
+    {
+      "date": "2021-07-10T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 5421.01,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-10T10:12:00.000Z",
+      "name": "Tarifa Pacote de Serviços",
+      "description": "",
+      "value": -1.99,
+      "type": "debit",
+      "tag": "others"
+    },
+    {
+      "date": "2021-07-11T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 5266.03,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-11T17:23:00.000Z",
+      "name": "TED Transf. Eletr. Disponív.",
+      "description": "Maria Helena Santos",
+      "value": -21.99,
+      "type": "debit",
+      "tag": "others"
+    },
+    {
+      "date": "2021-07-11T20:32:00.000Z",
+      "name": "Cheque compensado",
+      "description": "",
+      "value": -132.99,
+      "type": "debit",
+      "tag": "others"
+    },
+    {
+      "date": "2021-07-12T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 5188.03,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-12T12:13:00.000Z",
+      "name": "Pagamento de Título",
+      "description": "Vivo",
+      "value": -42.50,
+      "type": "debit",
+      "tag": "service"
+    },
+    {
+      "date": "2021-07-12T13:35:00.000Z",
+      "name": "Compra com cartão",
+      "description": "Pizzaria",
+      "value": -35.50,
+      "type": "debit",
+      "tag": "food"
+    },
+    {
+      "date": "2021-07-15T23:59:59.000Z",
+      "name": "balance",
+      "description": "",
+      "value": 5117.53,
+      "type": "balance"
+    },
+    {
+      "date": "2021-07-15T15:22:00.000Z",
+      "name": "Compra com cartão",
+      "description": "Shopping",
+      "value": -70.50,
+      "type": "debit",
+      "tag": "shopping"
+    }
+  ]
+}
