@@ -9,6 +9,8 @@ export const Container = styled.div`
 
 export const Head = styled.div`
   padding: 16px 16px;
+  max-width: 798px;
+  margin: 0 auto;
   & h1 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
