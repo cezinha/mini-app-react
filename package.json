@@ -27,11 +27,22 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}'"
+    "lint:fix": "eslint './src/**/*.{ts,tsx}'",
+    "start:micro": "webpack-cli serve",
+    "build:micro": "webpack --mode production",
+    "serve": "serve dist -p 3001",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.14.5",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
+    "atriom-plugin": "^1.1.2",
+    "babel-loader": "^8.2.2",
+    "bundle-loader": "^0.5.6",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^8.3.0",
@@ -42,7 +53,12 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.3.2"
+    "html-webpack-plugin": "^5.3.1",
+    "prettier": "^2.3.2",
+    "webpack": "^5.33.2",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   },
   "browserslist": {
     "production": [
