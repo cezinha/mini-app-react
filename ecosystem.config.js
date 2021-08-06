@@ -5,7 +5,7 @@ module.exports = {
       name: 'react-mini-app',
       script: 'npx',
       interpreter: 'none',
-      args: 'serve ./dist/ -p 80'
+      args: 'serve ./dist/ -p 3000'
     }
   ]
 };
