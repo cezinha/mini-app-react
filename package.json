@@ -29,7 +29,7 @@
     "lint:fix": "eslint './src/**/*.{ts,tsx}'",
     "serve": "webpack-cli serve",
     "build": "webpack --mode production",
-    "start": "pm2 serve ./dist/ 80",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
