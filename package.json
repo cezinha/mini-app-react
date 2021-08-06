@@ -22,14 +22,12 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
     "lint:fix": "eslint './src/**/*.{ts,tsx}'",
-    "start:micro": "webpack-cli serve",
-    "build:micro": "webpack --mode production",
+    "start": "webpack-cli serve",
+    "build": "webpack --mode production",
     "serve": "serve dist -p 3001",
     "clean": "rm -rf dist"
   },
