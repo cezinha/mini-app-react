@@ -24,12 +24,11 @@
     "dev": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-prebuild": "npm install --also=dev",
     "heroku-postbuild": "npm run build",
     "lint:fix": "eslint './src/**/*.{ts,tsx}'",
-    "start": "webpack-cli serve",
+    "serve": "webpack-cli serve",
     "build": "webpack --mode production",
-    "serve": "serve dist -p 3001",
+    "start": "serve dist -p 3001",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
