@@ -28,8 +28,9 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build",
     "lint:fix": "eslint './src/**/*.{ts,tsx}'",
-    "serve": "webpack-cli serve",
-    "build": "webpack --mode production",
+    "build:dev": "webpack --config webpack.dev.js",
+    "start:dev": "webpack-cli serve",
+    "build": "webpack --config webpack.prod.js",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "clean": "rm -rf dist"
   },

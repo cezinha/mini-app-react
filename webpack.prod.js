@@ -1,20 +1,15 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ModuleFederationPlugin } = require('webpack').container;
-const CopyPlugin = require("copy-webpack-plugin");
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const AtriomPlugin = require('atriom-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const { ModuleFederationPlugin } = require('webpack').container;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index',
-  mode: 'development',
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 3001,
-  },
+  mode: 'production',
   output: {
     publicPath: 'auto',
   },
@@ -75,7 +70,7 @@ module.exports = {
       // best place to understand Module Federation config https://github.com/webpack/webpack/pull/10960
       name: 'AppShell',
       remotes: {
-        Cards: 'Cards@http://localhost:4000/remoteEntry.js',
+        Cards: 'Cards@https://cards-mfe.herokuapp.com/remoteEntry.js',
       },
       shared: {
         '@types/react': {
@@ -116,9 +111,7 @@ module.exports = {
       template: './public/index.html',
     }),
     new CopyPlugin({
-      patterns: [
-        { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(__dirname, 'dist', 'assets') },
-      ],
-    })
+      patterns: [{ from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(__dirname, 'dist', 'assets') }],
+    }),
   ],
 };
