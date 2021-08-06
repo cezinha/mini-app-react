@@ -3,9 +3,8 @@ module.exports = {
   apps : [
     {
       name: 'react-mini-app',
-      script: 'npx',
       interpreter: 'none',
-      args: 'serve dist/'
+      script: 'server.sh',
     }
   ]
 };
