@@ -9,6 +9,7 @@
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "date-fns": "^2.22.1",
+    "pm2": "^5.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -28,7 +29,7 @@
     "lint:fix": "eslint './src/**/*.{ts,tsx}'",
     "serve": "webpack-cli serve",
     "build": "webpack --mode production",
-    "start": "serve dist -p 3001",
+    "start": "pm2 serve dist 80 --spa",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
