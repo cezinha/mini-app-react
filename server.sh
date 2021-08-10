@@ -1,2 +1,2 @@
 #!/bin/sh
-serve dist/
+serve -s dist
