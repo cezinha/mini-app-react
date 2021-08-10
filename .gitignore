@@ -1,28 +1,27 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules
 
 # testing
-/coverage
+coverage
 
 # production
-/build
+build
 
 # misc
 .DS_Store
 .env.local
 
-# this file contains VPN-PROD credentials
 .npmrc
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
-/.yarn
+.yarnrc
 
 .env
 .vscode
 .eslintcache
-dist/
+dist
