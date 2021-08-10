@@ -32,7 +32,8 @@
     "build:dev": "webpack --config webpack.dev.js",
     "start:dev": "webpack-cli serve --env development --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "start": "serve -s build",
+    "start:pm2": "pm2-runtime start ecosystem.config.js --env production",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
