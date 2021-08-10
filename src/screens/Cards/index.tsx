@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 
 import View from '../../components/ui/View';
 import { Container } from './style';
 // eslint-disable-next-line react/display-name
-const CardsMFE = React.lazy(() => import("Cards/Cards")); 
 
 class ErrorBoundary extends React.Component<any, { hasError: boolean}> {
   constructor(props) {
@@ -29,13 +28,27 @@ class ErrorBoundary extends React.Component<any, { hasError: boolean}> {
   }
 }
 
-const Cards = () => (
-<ErrorBoundary><React.Suspense fallback="Loading..." >
-    <View>
-      <Container>
-        <CardsMFE />    
-      </Container>
-    </View>
-  </React.Suspense></ErrorBoundary>)
+const Cards = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    import('Cards/Cards')
+      .then(_ => console.debug('element cards loaded!'))
+      .catch(err => console.error('error loading cards:', err));
+    const element = document.createElement('mfe1-element');
+    if (ref.current !== null) {
+      ref.current.append(element);
+    }
+  }, []);
 
+  return (
+    <ErrorBoundary>
+      <React.Suspense fallback="Loading..." >
+        <View>
+          <Container>
+            <div ref={ref}></div>
+          </Container>
+        </View>
+      </React.Suspense>
+    </ErrorBoundary>)
+}
 export default Cards;

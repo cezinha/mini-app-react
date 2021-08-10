@@ -68,7 +68,7 @@ module.exports = {
     // new BundleAnalyzerPlugin(),
     new AtriomPlugin({
       filename: 'atriom',
-      outputPath: path.join(__dirname, '../'),
+      outputPath: path.join(__dirname, '.'),
     }),
     new ModuleFederationPlugin({
       // best place to understand Module Federation config https://github.com/webpack/webpack/pull/10960
