@@ -70,7 +70,7 @@ module.exports = {
       // best place to understand Module Federation config https://github.com/webpack/webpack/pull/10960
       name: 'AppShell',
       remotes: {
-        Cards: 'Cards@https://cards-mfe.herokuapp.com/remoteEntry.js',
+        Cards: 'Cards@https://mini-app-angular.herokuapp.com/remoteEntry.js',
       },
       shared: {
         '@types/react': {
