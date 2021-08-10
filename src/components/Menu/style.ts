@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 5;
 `;
