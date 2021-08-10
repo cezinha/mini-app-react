@@ -1,24 +1,4 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-
-import Router from './router';
-import './style.css';
-
-interface AppState {
-  name: string;
-}
-
-class App extends Component<unknown, AppState> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: 'React'
-    };
-  }
-
-  render() {
-    return <Router />;
-  }
-}
-
-render(<App />, document.getElementById('root'));
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import bootstrap from './bootstrap';
+bootstrap(() => {});
